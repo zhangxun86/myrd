@@ -54,4 +54,18 @@ examples/**/target/
 vcpkg_installed
 flutter/lib/generated_plugin_registrant.dart
 libsciter.dylib
-flutter/web/
+flutter/web/Cargo.lock
+
+# 构建产物
+target/
+Cargo.lock
+
+# 临时文件
+*.log
+*.tmp
+*.bak
+
+# 敏感配置
+**/config.log
+**/.env
+
