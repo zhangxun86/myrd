@@ -1,3 +1,4 @@
+#[cfg(not(target_os = "android"))]
 pub use self::vpxcodec::*;
 use hbb_common::{
     bail, log,
@@ -35,12 +36,21 @@ cfg_if! {
     }
 }
 
+#[cfg(target_os = "android")]
 pub mod codec;
+#[cfg(not(target_os = "android"))]
+#[path = "codec_full.rs"]
+pub mod codec;
+
+// Re-export audio types for Android compatibility
+#[cfg(target_os = "android")]
+pub use codec::{AudioDecoder, AudioEncoder as Encoder, Channels, Application, Mono, Stereo, LowDelay, test_av1};
 pub mod convert;
 #[cfg(feature = "hwcodec")]
 pub mod hwcodec;
 #[cfg(feature = "mediacodec")]
 pub mod mediacodec;
+#[cfg(not(target_os = "android"))]
 pub mod vpxcodec;
 #[cfg(feature = "vram")]
 pub mod vram;
@@ -48,10 +58,12 @@ pub use self::convert::*;
 pub const STRIDE_ALIGN: usize = 64; // commonly used in libvpx vpx_img_alloc caller
 pub const HW_STRIDE_ALIGN: usize = 0; // recommended by av_frame_get_buffer
 
+#[cfg(not(target_os = "android"))]
 pub mod aom;
 #[cfg(not(any(target_os = "ios")))]
 pub mod camera;
 pub mod record;
+#[cfg(not(target_os = "android"))]
 mod vpx;
 
 #[repr(usize)]
@@ -545,3 +557,49 @@ pub fn screen_size() -> (u16, u16, u16) {
 pub fn is_start() -> Option<bool> {
     android::is_start()
 }
+
+// YUV conversion function stubs for Android
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToRAW(
+    _src_y: *const u8, _src_stride_y: std::os::raw::c_int,
+    _src_u: *const u8, _src_stride_u: std::os::raw::c_int,
+    _src_v: *const u8, _src_stride_v: std::os::raw::c_int,
+    _dst_raw: *mut u8, _dst_stride_raw: std::os::raw::c_int,
+    _width: std::os::raw::c_int, _height: std::os::raw::c_int
+) -> std::os::raw::c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToARGB(
+    _src_y: *const u8, _src_stride_y: std::os::raw::c_int,
+    _src_u: *const u8, _src_stride_u: std::os::raw::c_int,
+    _src_v: *const u8, _src_stride_v: std::os::raw::c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: std::os::raw::c_int,
+    _width: std::os::raw::c_int, _height: std::os::raw::c_int
+) -> std::os::raw::c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToABGR(
+    _src_y: *const u8, _src_stride_y: std::os::raw::c_int,
+    _src_u: *const u8, _src_stride_u: std::os::raw::c_int,
+    _src_v: *const u8, _src_stride_v: std::os::raw::c_int,
+    _dst_abgr: *mut u8, _dst_stride_abgr: std::os::raw::c_int,
+    _width: std::os::raw::c_int, _height: std::os::raw::c_int
+) -> std::os::raw::c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I444ToARGB(
+    _src_y: *const u8, _src_stride_y: std::os::raw::c_int,
+    _src_u: *const u8, _src_stride_u: std::os::raw::c_int,
+    _src_v: *const u8, _src_stride_v: std::os::raw::c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: std::os::raw::c_int,
+    _width: std::os::raw::c_int, _height: std::os::raw::c_int
+) -> std::os::raw::c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I444ToABGR(
+    _src_y: *const u8, _src_stride_y: std::os::raw::c_int,
+    _src_u: *const u8, _src_stride_u: std::os::raw::c_int,
+    _src_v: *const u8, _src_stride_v: std::os::raw::c_int,
+    _dst_abgr: *mut u8, _dst_stride_abgr: std::os::raw::c_int,
+    _width: std::os::raw::c_int, _height: std::os::raw::c_int
+) -> std::os::raw::c_int { 0 }

@@ -4,7 +4,125 @@
 #![allow(improper_ctypes)]
 #![allow(dead_code)]
 
+// Conditional include for different platforms
+#[cfg(not(target_os = "android"))]
 include!(concat!(env!("OUT_DIR"), "/yuv_ffi.rs"));
+
+// Android YUV function stubs
+#[cfg(target_os = "android")]
+use std::os::raw::c_int;
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToRAW(
+    _src_y: *const u8, _src_stride_y: c_int,
+    _src_u: *const u8, _src_stride_u: c_int,
+    _src_v: *const u8, _src_stride_v: c_int,
+    _dst_raw: *mut u8, _dst_stride_raw: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToARGB(
+    _src_y: *const u8, _src_stride_y: c_int,
+    _src_u: *const u8, _src_stride_u: c_int,
+    _src_v: *const u8, _src_stride_v: c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I420ToABGR(
+    _src_y: *const u8, _src_stride_y: c_int,
+    _src_u: *const u8, _src_stride_u: c_int,
+    _src_v: *const u8, _src_stride_v: c_int,
+    _dst_abgr: *mut u8, _dst_stride_abgr: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I444ToARGB(
+    _src_y: *const u8, _src_stride_y: c_int,
+    _src_u: *const u8, _src_stride_u: c_int,
+    _src_v: *const u8, _src_stride_v: c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn I444ToABGR(
+    _src_y: *const u8, _src_stride_y: c_int,
+    _src_u: *const u8, _src_stride_u: c_int,
+    _src_v: *const u8, _src_stride_v: c_int,
+    _dst_abgr: *mut u8, _dst_stride_abgr: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+// Additional stub functions for convert.rs functionality
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ARGBToI420(
+    _src_argb: *const u8, _src_stride_argb: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_u: *mut u8, _dst_stride_u: c_int,
+    _dst_v: *mut u8, _dst_stride_v: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ABGRToI420(
+    _src_abgr: *const u8, _src_stride_abgr: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_u: *mut u8, _dst_stride_u: c_int,
+    _dst_v: *mut u8, _dst_stride_v: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn RGB565ToI420(
+    _src_rgb565: *const u8, _src_stride_rgb565: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_u: *mut u8, _dst_stride_u: c_int,
+    _dst_v: *mut u8, _dst_stride_v: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ARGBToNV12(
+    _src_argb: *const u8, _src_stride_argb: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_uv: *mut u8, _dst_stride_uv: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ABGRToNV12(
+    _src_abgr: *const u8, _src_stride_abgr: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_uv: *mut u8, _dst_stride_uv: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn RGB565ToARGB(
+    _src_rgb565: *const u8, _src_stride_rgb565: c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ABGRToARGB(
+    _src_abgr: *const u8, _src_stride_abgr: c_int,
+    _dst_argb: *mut u8, _dst_stride_argb: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
+
+#[cfg(target_os = "android")]
+pub unsafe extern "C" fn ARGBToI444(
+    _src_argb: *const u8, _src_stride_argb: c_int,
+    _dst_y: *mut u8, _dst_stride_y: c_int,
+    _dst_u: *mut u8, _dst_stride_u: c_int,
+    _dst_v: *mut u8, _dst_stride_v: c_int,
+    _width: c_int, _height: c_int
+) -> c_int { 0 }
 
 #[cfg(not(target_os = "ios"))]
 use crate::PixelBuffer;

@@ -29,6 +29,76 @@ use std::{
     time::{Duration, SystemTime},
 };
 
+// Android stub functions for quick compilation
+#[cfg(target_os = "android")]
+mod android_stubs {
+    use super::*;
+    
+    pub fn peer_exists(id: &str) -> bool {
+        crate::ui_interface::peer_exists(id)
+    }
+    
+    pub fn peer_to_map(id: String, p: PeerConfig) -> HashMap<&'static str, String> {
+        crate::ui_interface::peer_to_map(id, p)
+    }
+    
+    pub fn set_user_default_option(key: String, value: String) {
+        crate::ui_interface::set_user_default_option(key, value)
+    }
+    
+    pub fn get_user_default_option(key: String) -> String {
+        crate::ui_interface::get_user_default_option(key)
+    }
+    
+    pub fn supported_hwdecodings() -> (bool, bool) {
+        crate::ui_interface::supported_hwdecodings()
+    }
+    
+    pub fn get_unlock_pin() -> String {
+        crate::ui_interface::get_unlock_pin()
+    }
+    
+    pub fn set_unlock_pin(pin: String) -> String {
+        crate::ui_interface::set_unlock_pin(pin)
+    }
+    
+    pub fn is_can_input_monitoring(prompt: bool) -> bool {
+        crate::ui_interface::is_can_input_monitoring(prompt)
+    }
+    
+    pub fn account_auth(op: String, id: String, uuid: String, remember_me: bool) {
+        crate::ui_interface::account_auth(op, id, uuid, remember_me)
+    }
+    
+    pub fn account_auth_cancel() {
+        crate::ui_interface::account_auth_cancel()
+    }
+    
+    pub fn account_auth_result() -> String {
+        crate::ui_interface::account_auth_result()
+    }
+    
+    pub fn get_hard_option(key: String) -> String {
+        crate::ui_interface::get_hard_option(key)
+    }
+    
+    pub fn get_trusted_devices() -> String {
+        crate::ui_interface::get_trusted_devices()
+    }
+    
+    pub fn remove_trusted_devices(json: &str) {
+        crate::ui_interface::remove_trusted_devices(json)
+    }
+    
+    pub fn clear_trusted_devices() {
+        crate::ui_interface::clear_trusted_devices()
+    }
+    
+    pub fn max_encrypt_len() -> usize {
+        crate::ui_interface::max_encrypt_len()
+    }
+}
+
 pub type SessionID = uuid::Uuid;
 
 lazy_static::lazy_static! {
@@ -1237,7 +1307,10 @@ pub fn main_peer_has_password(id: String) -> bool {
 }
 
 pub fn main_peer_exists(id: String) -> bool {
-    peer_exists(&id)
+    #[cfg(target_os = "android")]
+    return android_stubs::peer_exists(&id);
+    #[cfg(not(target_os = "android"))]
+    return peer_exists(&id);
 }
 
 fn load_recent_peers(
@@ -1254,7 +1327,12 @@ fn load_recent_peers(
     let mut peers_next = PeerConfig::batch_peers(vec_id_modified_time_path, from, to);
     // There may be less peers than the batch size.
     // But no need to consider this case, because it is a rare case.
-    let peers = peers_next.0.drain(..).map(|(id, _, p)| peer_to_map(id, p));
+    let peers = peers_next.0.drain(..).map(|(id, _, p)| {
+        #[cfg(target_os = "android")]
+        return android_stubs::peer_to_map(id, p);
+        #[cfg(not(target_os = "android"))]
+        return peer_to_map(id, p);
+    });
     all_peers.extend(peers);
     peers_next.1
 }
@@ -1322,7 +1400,12 @@ pub fn main_load_recent_peers_for_ab(filter: String) -> String {
     if !config::APP_DIR.read().unwrap().is_empty() {
         let peers: Vec<HashMap<&str, String>> = PeerConfig::peers(id_filters)
             .drain(..)
-            .map(|(id, _, p)| peer_to_map(id, p))
+            .map(|(id, _, p)| {
+                #[cfg(target_os = "android")]
+                return android_stubs::peer_to_map(id, p);
+                #[cfg(not(target_os = "android"))]
+                return peer_to_map(id, p);
+            })
             .collect();
         return serde_json::ser::to_string(&peers).unwrap_or("".to_owned());
     }
@@ -1362,7 +1445,12 @@ pub fn main_load_fav_peers() {
         recent.append(&mut lan);
         let peers: Vec<HashMap<&str, String>> = recent
             .into_iter()
-            .map(|(id, _, p)| peer_to_map(id, p))
+            .map(|(id, _, p)| {
+                #[cfg(target_os = "android")]
+                return android_stubs::peer_to_map(id, p);
+                #[cfg(not(target_os = "android"))]
+                return peer_to_map(id, p);
+            })
             .collect();
 
         push_to_flutter(serde_json::ser::to_string(&peers).unwrap_or("".to_owned()));
@@ -1416,11 +1504,17 @@ pub fn main_video_save_directory(root: bool) -> SyncReturn<String> {
 }
 
 pub fn main_set_user_default_option(key: String, value: String) {
+    #[cfg(target_os = "android")]
+    android_stubs::set_user_default_option(key, value);
+    #[cfg(not(target_os = "android"))]
     set_user_default_option(key, value);
 }
 
 pub fn main_get_user_default_option(key: String) -> SyncReturn<String> {
-    SyncReturn(get_user_default_option(key))
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::get_user_default_option(key));
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(get_user_default_option(key));
 }
 
 pub fn main_handle_relay_id(id: String) -> String {
@@ -1629,6 +1723,9 @@ pub fn main_has_vram() -> SyncReturn<bool> {
 }
 
 pub fn main_supported_hwdecodings() -> SyncReturn<String> {
+    #[cfg(target_os = "android")]
+    let decoding = android_stubs::supported_hwdecodings();
+    #[cfg(not(target_os = "android"))]
     let decoding = supported_hwdecodings();
     let msg = HashMap::from([("h264", decoding.0), ("h265", decoding.1)]);
 
@@ -1846,11 +1943,17 @@ pub fn main_check_super_user_permission() -> bool {
 }
 
 pub fn main_get_unlock_pin() -> SyncReturn<String> {
-    SyncReturn(get_unlock_pin())
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::get_unlock_pin());
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(get_unlock_pin());
 }
 
 pub fn main_set_unlock_pin(pin: String) -> SyncReturn<String> {
-    SyncReturn(set_unlock_pin(pin))
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::set_unlock_pin(pin));
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(set_unlock_pin(pin));
 }
 
 pub fn main_check_mouse_time() {
@@ -2024,7 +2127,10 @@ pub fn main_is_can_screen_recording(prompt: bool) -> SyncReturn<bool> {
 }
 
 pub fn main_is_can_input_monitoring(prompt: bool) -> SyncReturn<bool> {
-    SyncReturn(is_can_input_monitoring(prompt))
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::is_can_input_monitoring(prompt));
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(is_can_input_monitoring(prompt));
 }
 
 pub fn main_is_share_rdp() -> SyncReturn<bool> {
@@ -2084,15 +2190,24 @@ pub fn install_install_options() -> SyncReturn<String> {
 pub fn main_account_auth(op: String, remember_me: bool) {
     let id = get_id();
     let uuid = get_uuid();
+    #[cfg(target_os = "android")]
+    android_stubs::account_auth(op, id, uuid, remember_me);
+    #[cfg(not(target_os = "android"))]
     account_auth(op, id, uuid, remember_me);
 }
 
 pub fn main_account_auth_cancel() {
-    account_auth_cancel()
+    #[cfg(target_os = "android")]
+    android_stubs::account_auth_cancel();
+    #[cfg(not(target_os = "android"))]
+    account_auth_cancel();
 }
 
 pub fn main_account_auth_result() -> String {
-    account_auth_result()
+    #[cfg(target_os = "android")]
+    return android_stubs::account_auth_result();
+    #[cfg(not(target_os = "android"))]
+    return account_auth_result();
 }
 
 pub fn main_on_main_window_close() {
@@ -2450,7 +2565,10 @@ pub fn main_has_valid_bot_sync() -> SyncReturn<bool> {
 }
 
 pub fn main_get_hard_option(key: String) -> SyncReturn<String> {
-    SyncReturn(get_hard_option(key))
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::get_hard_option(key));
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(get_hard_option(key));
 }
 
 pub fn main_get_buildin_option(key: String) -> SyncReturn<String> {
@@ -2462,19 +2580,31 @@ pub fn main_check_hwcodec() {
 }
 
 pub fn main_get_trusted_devices() -> String {
-    get_trusted_devices()
+    #[cfg(target_os = "android")]
+    return android_stubs::get_trusted_devices();
+    #[cfg(not(target_os = "android"))]
+    return get_trusted_devices();
 }
 
 pub fn main_remove_trusted_devices(json: String) {
-    remove_trusted_devices(&json)
+    #[cfg(target_os = "android")]
+    android_stubs::remove_trusted_devices(&json);
+    #[cfg(not(target_os = "android"))]
+    remove_trusted_devices(&json);
 }
 
 pub fn main_clear_trusted_devices() {
-    clear_trusted_devices()
+    #[cfg(target_os = "android")]
+    android_stubs::clear_trusted_devices();
+    #[cfg(not(target_os = "android"))]
+    clear_trusted_devices();
 }
 
 pub fn main_max_encrypt_len() -> SyncReturn<usize> {
-    SyncReturn(max_encrypt_len())
+    #[cfg(target_os = "android")]
+    return SyncReturn(android_stubs::max_encrypt_len());
+    #[cfg(not(target_os = "android"))]
+    return SyncReturn(max_encrypt_len());
 }
 
 pub fn session_request_new_display_init_msgs(session_id: SessionID, display: usize) {

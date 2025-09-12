@@ -7,6 +7,9 @@ import 'package:flutter_hbb/models/peer_model.dart';
 
 import '../../models/platform_model.dart';
 
+// 全局bind实例
+final _bind = bind;
+
 class HttpType {
   static const kAuthReqTypeAccount = "account";
   static const kAuthReqTypeMobile = "mobile";

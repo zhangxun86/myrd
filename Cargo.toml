@@ -41,12 +41,14 @@ unix-file-copy-paste = [
     "clipboard/unix-file-copy-paste",
 ]
 screencapturekit = ["cpal/screencapturekit"]
+audio = ["dep:magnum-opus"]
+android-minimal = ["scrap/android-minimal"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 async-trait = "0.1"
-scrap = { path = "libs/scrap", features = ["wayland"] }
+scrap = { path = "libs/scrap", features = ["wayland"], default-features = false }
 hbb_common = { path = "libs/hbb_common" }
 serde_derive = "1.0"
 serde = "1.0"
@@ -57,7 +59,6 @@ lazy_static = "1.4"
 sha2 = "0.10"
 repng = "0.2"
 parity-tokio-ipc = { git = "https://github.com/rustdesk-org/parity-tokio-ipc" }
-magnum-opus = { git = "https://github.com/rustdesk-org/magnum-opus" }
 dasp = { version = "0.11", features = ["signal", "interpolate-linear", "interpolate"], optional = true }
 rubato = { version = "0.12", optional = true }
 samplerate = { version = "0.2", optional = true }
@@ -83,6 +84,9 @@ shutdown_hooks = "0.1"
 totp-rs = { version = "5.4", default-features = false, features = ["gen_secret", "otpauth"] }
 stunclient = "0.4"
 kcp-sys= { git = "https://github.com/rustdesk-org/kcp-sys"}
+[target.'cfg(not(target_os = "android"))'.dependencies]
+magnum-opus = { git = "https://github.com/rustdesk-org/magnum-opus", optional = true }
+
 [target.'cfg(not(target_os = "linux"))'.dependencies]
 # https://github.com/rustdesk/rustdesk/discussions/10197, not use cpal on linux
 cpal = { git = "https://github.com/rustdesk-org/cpal", branch = "osx-screencapturekit" }

@@ -16,6 +16,7 @@ use std::{
     sync::mpsc::Sender,
     time::Instant,
 };
+#[cfg(feature = "webm")]
 use webm::mux::{self, Segment, Track, VideoTrack, Writer};
 
 const MIN_SECS: u64 = 1;
@@ -152,6 +153,7 @@ impl Recorder {
         };
         if self.inner.is_none() {
             self.inner = match format {
+                #[cfg(feature = "webm")]
                 CodecFormat::VP8 | CodecFormat::VP9 | CodecFormat::AV1 => Some(Box::new(
                     WebmRecorder::new(self.ctx.clone(), (*ctx2).clone())?,
                 )),
@@ -160,8 +162,10 @@ impl Recorder {
                     self.ctx.clone(),
                     (*ctx2).clone(),
                 )?)),
-                #[cfg(not(feature = "hwcodec"))]
+                #[cfg(not(any(feature = "hwcodec", feature = "webm")))]
                 _ => bail!("unsupported codec type"),
+                #[cfg(all(not(feature = "hwcodec"), feature = "webm"))]
+                CodecFormat::H264 | CodecFormat::H265 => bail!("unsupported codec type"),
             };
             // pts is None when new inner is created
             self.pts = None;
@@ -270,6 +274,7 @@ impl Recorder {
     }
 }
 
+#[cfg(feature = "webm")]
 struct WebmRecorder {
     vt: VideoTrack,
     webm: Option<Segment<Writer<File>>>,
@@ -280,6 +285,7 @@ struct WebmRecorder {
     start: Instant,
 }
 
+#[cfg(feature = "webm")]
 impl RecorderApi for WebmRecorder {
     fn new(ctx: RecorderContext, ctx2: RecorderContext2) -> ResultType<Self> {
         let out = match {
@@ -344,6 +350,7 @@ impl RecorderApi for WebmRecorder {
     }
 }
 
+#[cfg(feature = "webm")]
 impl Drop for WebmRecorder {
     fn drop(&mut self) {
         let _ = std::mem::replace(&mut self.webm, None).map_or(false, |webm| webm.finalize(None));
