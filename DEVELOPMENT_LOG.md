@@ -94,24 +94,55 @@ export PATH=/opt/flutter/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOM
 
 ## 网络代理配置
 
+### 代理软件选择与配置
+**使用软件**: V2Ray v4.45.2 (Linux x64)
+**协议**: VMess + WebSocket + TLS
+**代理地区**: 美国节点
+**配置文件**: 详见 `PROXY_SETUP_GUIDE.md`
+
+### 快速使用脚本
+```bash
+# 1. 启动代理服务
+./start_proxy.sh
+
+# 2. 配置开发环境代理
+source ./setup_proxy_env.sh
+
+# 3. 验证代理效果
+curl --proxy http://127.0.0.1:8080 https://httpbin.org/ip
+```
+
 ### Git代理配置
 ```bash
-# 全局Git代理设置
-git config --global http.proxy http://your-proxy:port
-git config --global https.proxy https://your-proxy:port
-
-# 特定域名代理 (如果需要)
-git config --global http.https://github.com.proxy http://your-proxy:port
+# 全局Git代理设置 (已自动配置)
+git config --global http.proxy http://127.0.0.1:8080
+git config --global https.proxy http://127.0.0.1:8080
+git config --global http.https://github.com.proxy http://127.0.0.1:8080
 ```
 
 ### 系统代理配置
 ```bash
-# 环境变量设置
-export http_proxy=http://your-proxy:port
-export https_proxy=https://your-proxy:port
-export HTTP_PROXY=http://your-proxy:port
-export HTTPS_PROXY=https://your-proxy:port
+# 环境变量设置 (已自动配置)
+export http_proxy=http://127.0.0.1:8080
+export https_proxy=http://127.0.0.1:8080
+export HTTP_PROXY=http://127.0.0.1:8080
+export HTTPS_PROXY=http://127.0.0.1:8080
+export no_proxy=localhost,127.0.0.1,192.168.0.0/16
 ```
+
+### 解决的网络问题
+1. **GitHub访问**: 从连接超时到正常clone/push (2-5MB/s)
+2. **Rust Crates下载**: 从失败到正常完成依赖安装
+3. **Android SDK/NDK**: 成功下载NDK r27c和必要组件
+4. **Flutter依赖**: 正常下载Flutter和Dart包
+
+### 详细配置文档
+完整的代理配置指南请参考: **`PROXY_SETUP_GUIDE.md`**
+包含:
+- V2Ray/Clash安装配置
+- 多种代理方案对比
+- 故障排除指南
+- 性能测试方法
 
 ## 主要开发工作
 
