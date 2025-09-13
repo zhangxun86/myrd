@@ -1,0 +1,27 @@
+[package]
+name = "rustdesk"
+version = "1.4.2"
+authors = ["rustdesk <info@rustdesk.com>"]
+edition = "2021"
+build = "build.rs"
+description = "RustDesk Remote Desktop - Android Minimal"
+rust-version = "1.75"
+
+[lib]
+name = "rustdesk"
+crate-type = ["cdylib"]
+
+[features]
+default = []
+android-minimal = []
+
+[dependencies]
+# 最小依赖集合
+serde = "1.0"
+serde_json = "1.0"
+lazy_static = "1.4"
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.13"
+
+[build-dependencies]

@@ -1,0 +1,1335 @@
+🚀 快速策略：使用占位符进行Flutter APK构建
+📦 创建占位符librustdesk.so文件...
+🔨 编译占位符库...
+✅ 占位符库创建成功: /root/rustdesk/myrd/flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so
+📏 文件大小: 8.0K
+/root/rustdesk/myrd/flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, not stripped
+🎊 现在可以尝试Flutter APK构建了!
+📱 进入Flutter构建阶段...
+📂 检查Flutter项目结构:
+total 16
+drwxr-xr-x 2 root root 4096 Sep 13 08:24 .
+drwxr-xr-x 3 root root 4096 Sep 12 22:52 ..
+-rwxr-xr-x 1 root root 5520 Sep 13 08:24 librustdesk.so
+🚀 开始Flutter APK构建...
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+Running Gradle task 'assembleRelease'...                        
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Error: Couldn't resolve the package 'desktop_multi_window' in 'package:desktop_multi_window/desktop_multi_window.dart'.
+Error: Couldn't resolve the package 'window_manager' in 'package:window_manager/window_manager.dart'.
+lib/main.dart:6:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/models/state_model.dart:1:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/utils/multi_window_manager.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/main.dart:24:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/desktop/pages/desktop_tab_page.dart:10:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/desktop/pages/install_page.dart:12:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/desktop/pages/server_page.dart:16:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/common.dart:6:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+Error: Couldn't resolve the package 'uni_links' in 'package:uni_links/uni_links.dart'.
+lib/common.dart:25:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+Error: Couldn't resolve the package 'window_size' in 'package:window_size/window_size.dart'.
+lib/desktop/widgets/tabbar_widget.dart:6:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/widgets/tabbar_widget.dart:19:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+Error: Couldn't resolve the package 'dash_chat_2' in 'package:dash_chat_2/dash_chat_2.dart'.
+lib/models/chat_model.dart:4:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/models/chat_model.dart:15:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/models/model.dart:8:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/models/model.dart:37:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/desktop/pages/desktop_home_page.dart:24:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/models/server_model.dart:12:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/desktop/pages/file_manager_tab_page.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/view_camera_tab_page.dart:5:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/port_forward_tab_page.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/remote_tab_page.dart:5:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/terminal_tab_page.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/models/input_model.dart:7:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/common.dart:22:8: Error: Not found: 'package:uni_links/uni_links.dart'
+import 'package:uni_links/uni_links.dart';
+       ^
+lib/common.dart:26:8: Error: Not found: 'package:window_size/window_size.dart'
+import 'package:window_size/window_size.dart' as window_size;
+       ^
+lib/desktop/pages/desktop_home_page.dart:25:8: Error: Not found: 'package:window_size/window_size.dart'
+import 'package:window_size/window_size.dart' as window_size;
+       ^
+lib/desktop/pages/remote_page.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/view_camera_page.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/widgets/remote_toolbar.dart:19:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/widgets/remote_toolbar.dart:20:8: Error: Not found: 'package:window_size/window_size.dart'
+import 'package:window_size/window_size.dart' as window_size;
+       ^
+lib/models/platform_model.dart:2:8: Error: Error when reading 'lib/generated_bridge.dart': No such file or directory
+import 'package:flutter_hbb/generated_bridge.dart'
+       ^
+lib/models/model.dart:46:8: Error: Error when reading 'lib/generated_bridge.dart': No such file or directory
+import 'package:flutter_hbb/generated_bridge.dart'
+       ^
+lib/models/native_model.dart:16:8: Error: Error when reading 'lib/generated_bridge.dart': No such file or directory
+import '../generated_bridge.dart';
+       ^
+lib/models/chat_model.dart:3:8: Error: Not found: 'package:dash_chat_2/dash_chat_2.dart'
+import 'package:dash_chat_2/dash_chat_2.dart';
+       ^
+lib/common/widgets/chat_page.dart:1:8: Error: Not found: 'package:dash_chat_2/dash_chat_2.dart'
+import 'package:dash_chat_2/dash_chat_2.dart';
+       ^
+Error: Couldn't resolve the package 'dynamic_layouts' in 'package:dynamic_layouts/dynamic_layouts.dart'.
+lib/common/widgets/peers_view.dart:14:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+Error: Couldn't resolve the package 'flutter_gpu_texture_renderer' in 'package:flutter_gpu_texture_renderer/flutter_gpu_texture_renderer.dart'.
+Error: Couldn't resolve the package 'texture_rgba_renderer' in 'package:texture_rgba_renderer/texture_rgba_renderer.dart'.
+lib/models/terminal_model.dart:3:8: Error: Not found: 'package:desktop_multi_window/desktop_multi_window.dart'
+import 'package:desktop_multi_window/desktop_multi_window.dart';
+       ^
+lib/desktop/pages/connection_page.dart:14:8: Error: Not found: 'package:window_manager/window_manager.dart'
+import 'package:window_manager/window_manager.dart';
+       ^
+lib/common/widgets/peers_view.dart:4:8: Error: Not found: 'package:dynamic_layouts/dynamic_layouts.dart'
+import 'package:dynamic_layouts/dynamic_layouts.dart';
+       ^
+lib/common/widgets/address_book.dart:5:8: Error: Not found: 'package:dynamic_layouts/dynamic_layouts.dart'
+import 'package:dynamic_layouts/dynamic_layouts.dart';
+       ^
+lib/models/desktop_render_texture.dart:2:8: Error: Not found: 'package:flutter_gpu_texture_renderer/flutter_gpu_texture_renderer.dart'
+import 'package:flutter_gpu_texture_renderer/flutter_gpu_texture_renderer.dart';
+       ^
+lib/models/desktop_render_texture.dart:11:8: Error: Not found: 'package:texture_rgba_renderer/texture_rgba_renderer.dart'
+import 'package:texture_rgba_renderer/texture_rgba_renderer.dart'
+       ^
+lib/main.dart:405:1: Error: Type 'WindowOptions' not found.
+WindowOptions getHiddenTitleBarWindowOptions(
+^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:64:10: Error: Type 'WindowListener' not found.
+    with WindowListener {
+         ^^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:33:10: Error: Type 'WindowListener' not found.
+    with WindowListener, AutomaticKeepAliveClientMixin {
+         ^^^^^^^^^^^^^^
+lib/common.dart:3768:6: Error: Type 'ResizeEdge' not found.
+List<ResizeEdge>? get windowManagerEnableResizeEdges => isWindows
+     ^^^^^^^^^^
+lib/common.dart:3776:6: Error: Type 'SubWindowResizeEdge' not found.
+List<SubWindowResizeEdge>? get subWindowManagerEnableResizeEdges => isWindows
+     ^^^^^^^^^^^^^^^^^^^
+lib/models/platform_model.dart:8:1: Error: Type 'RustdeskImpl' not found.
+RustdeskImpl get bind => platformFFI.ffiBind;
+^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:294:10: Error: Type 'MultiWindowListener' not found.
+    with MultiWindowListener, WindowListener {
+         ^^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:294:31: Error: Type 'WindowListener' not found.
+    with MultiWindowListener, WindowListener {
+                              ^^^^^^^^^^^^^^
+lib/models/chat_model.dart:43:3: Error: Type 'ChatUser' not found.
+  ChatUser chatUser;
+  ^^^^^^^^
+lib/models/chat_model.dart:44:8: Error: Type 'ChatMessage' not found.
+  List<ChatMessage> chatMessages;
+       ^^^^^^^^^^^
+lib/models/chat_model.dart:47:15: Error: Type 'ChatMessage' not found.
+  void insert(ChatMessage cm) {
+              ^^^^^^^^^^^
+lib/models/chat_model.dart:87:9: Error: Type 'ChatUser' not found.
+  final ChatUser me = ChatUser(
+        ^^^^^^^^
+lib/models/chat_model.dart:149:3: Error: Type 'ChatUser' not found.
+  ChatUser? get currentUser => _messages[_currentKey]?.chatUser;
+  ^^^^^^^^
+lib/models/chat_model.dart:444:8: Error: Type 'ChatMessage' not found.
+  send(ChatMessage message) {
+       ^^^^^^^^^^^
+lib/models/chat_model.dart:461:33: Error: Type 'ChatMessage' not found.
+  insertMessage(MessageKey key, ChatMessage message) {
+                                ^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:75:41: Error: Type 'MultiWindowListener' not found.
+    with AutomaticKeepAliveClientMixin, MultiWindowListener {
+                                        ^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:75:41: Error: Type 'MultiWindowListener' not found.
+    with AutomaticKeepAliveClientMixin, MultiWindowListener {
+                                        ^^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:864:3: Error: Type 'window_size.Screen' not found.
+  window_size.Screen? _screen;
+  ^^^^^^^^^^^^^^^^^^
+lib/models/native_model.dart:35:8: Error: Type 'RustdeskImpl' not found.
+  late RustdeskImpl _ffiBind;
+       ^^^^^^^^^^^^
+lib/models/native_model.dart:44:3: Error: Type 'RustdeskImpl' not found.
+  RustdeskImpl get ffiBind => _ffiBind;
+  ^^^^^^^^^^^^
+lib/models/native_model.dart:243:26: Error: Type 'RustdeskImpl' not found.
+  void _startListenEvent(RustdeskImpl rustdeskImpl) {
+                         ^^^^^^^^^^^^
+lib/common/widgets/peers_view.dart:88:10: Error: Type 'WindowListener' not found.
+    with WindowListener, WidgetsBindingObserver {
+         ^^^^^^^^^^^^^^
+lib/desktop/pages/connection_page.dart:200:42: Error: Type 'WindowListener' not found.
+    with SingleTickerProviderStateMixin, WindowListener {
+                                         ^^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:63:7: Error: The type 'WindowListener' can't be mixed in.
+class _InstallPageBodyState extends State<_InstallPageBody>
+      ^
+lib/desktop/pages/server_page.dart:32:7: Error: The type 'WindowListener' can't be mixed in.
+class _DesktopServerPageState extends State<DesktopServerPage>
+      ^
+lib/desktop/widgets/tabbar_widget.dart:293:7: Error: The type 'MultiWindowListener' can't be mixed in.
+class _DesktopTabState extends State<DesktopTab>
+      ^
+lib/desktop/widgets/tabbar_widget.dart:293:7: Error: The type 'WindowListener' can't be mixed in.
+class _DesktopTabState extends State<DesktopTab>
+      ^
+lib/desktop/pages/remote_page.dart:74:7: Error: The type 'MultiWindowListener' can't be mixed in.
+class _RemotePageState extends State<RemotePage>
+      ^
+lib/desktop/pages/view_camera_page.dart:74:7: Error: The type 'MultiWindowListener' can't be mixed in.
+class _ViewCameraPageState extends State<ViewCameraPage>
+      ^
+lib/common/widgets/peers_view.dart:87:7: Error: The type 'WindowListener' can't be mixed in.
+class _PeersViewState extends State<_PeersView>
+      ^
+lib/desktop/pages/connection_page.dart:199:7: Error: The type 'WindowListener' can't be mixed in.
+class _ConnectionPageState extends State<ConnectionPage>
+      ^
+lib/models/desktop_render_texture.dart:21:27: Error: Method not found: 'TextureRgbaRenderer'.
+  final textureRenderer = TextureRgbaRenderer();
+                          ^^^^^^^^^^^^^^^^^^^
+lib/models/desktop_render_texture.dart:70:30: Error: Method not found: 'FlutterGpuTextureRenderer'.
+  final gpuTextureRenderer = FlutterGpuTextureRenderer();
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/main.dart:56:7: Error: Undefined name 'WindowController'.
+      WindowController.fromWindowId(kWindowId!).showTitleBar(false);
+      ^^^^^^^^^^^^^^^^
+lib/main.dart:107:11: Error: Undefined name 'windowManager'.
+    await windowManager.ensureInitialized();
+          ^^^^^^^^^^^^^
+lib/main.dart:113:11: Error: Undefined name 'windowManager'.
+    await windowManager.ensureInitialized();
+          ^^^^^^^^^^^^^
+lib/main.dart:114:5: Error: Undefined name 'windowManager'.
+    windowManager.setPreventClose(true);
+    ^^^^^^^^^^^^^
+lib/main.dart:157:3: Error: 'WindowOptions' isn't a type.
+  WindowOptions windowOptions = getHiddenTitleBarWindowOptions(
+  ^^^^^^^^^^^^^
+lib/main.dart:166:7: Error: Undefined name 'windowManager'.
+      windowManager.hide();
+      ^^^^^^^^^^^^^
+lib/main.dart:168:7: Error: Undefined name 'windowManager'.
+      windowManager.show();
+      ^^^^^^^^^^^^^
+lib/main.dart:169:7: Error: Undefined name 'windowManager'.
+      windowManager.focus();
+      ^^^^^^^^^^^^^
+lib/main.dart:173:5: Error: Undefined name 'windowManager'.
+    windowManager.setOpacity(1);
+    ^^^^^^^^^^^^^
+lib/main.dart:174:5: Error: Undefined name 'windowManager'.
+    windowManager.setTitle(getWindowName());
+    ^^^^^^^^^^^^^
+lib/main.dart:159:3: Error: Undefined name 'windowManager'.
+  windowManager.waitUntilReadyToShow(windowOptions, () async {
+  ^^^^^^^^^^^^^
+lib/main.dart:199:3: Error: Undefined name 'WindowController'.
+  WindowController.fromWindowId(kWindowId!).setPreventClose(true);
+  ^^^^^^^^^^^^^^^^
+lib/main.dart:243:5: Error: Undefined name 'WindowController'.
+    WindowController.fromWindowId(kWindowId!).showTitleBar(true);
+    ^^^^^^^^^^^^^^^^
+lib/main.dart:286:3: Error: Undefined name 'WindowController'.
+  WindowController.fromWindowId(kWindowId!).show();
+  ^^^^^^^^^^^^^^^^
+lib/main.dart:312:5: Error: 'WindowOptions' isn't a type.
+    WindowOptions windowOptions = getHiddenTitleBarWindowOptions(
+    ^^^^^^^^^^^^^
+lib/main.dart:314:11: Error: Undefined name 'windowManager'.
+    await windowManager.waitUntilReadyToShow(windowOptions, null);
+          ^^^^^^^^^^^^^
+lib/main.dart:317:7: Error: Undefined name 'windowManager'.
+      windowManager.show(),
+      ^^^^^^^^^^^^^
+lib/main.dart:318:7: Error: Undefined name 'windowManager'.
+      windowManager.focus(),
+      ^^^^^^^^^^^^^
+lib/main.dart:319:7: Error: Undefined name 'windowManager'.
+      windowManager.setOpacity(1)
+      ^^^^^^^^^^^^^
+lib/main.dart:322:11: Error: Undefined name 'windowManager'.
+    await windowManager.setSizeAlignment(
+          ^^^^^^^^^^^^^
+lib/main.dart:326:15: Error: Undefined name 'windowManager'.
+    if (await windowManager.getOpacity() != 1) {
+              ^^^^^^^^^^^^^
+lib/main.dart:327:13: Error: Undefined name 'windowManager'.
+      await windowManager.setOpacity(1);
+            ^^^^^^^^^^^^^
+lib/main.dart:328:13: Error: Undefined name 'windowManager'.
+      await windowManager.focus();
+            ^^^^^^^^^^^^^
+lib/main.dart:329:13: Error: Undefined name 'windowManager'.
+      await windowManager.minimize(); //needed
+            ^^^^^^^^^^^^^
+lib/main.dart:330:13: Error: Undefined name 'windowManager'.
+      await windowManager.setSizeAlignment(
+            ^^^^^^^^^^^^^
+lib/main.dart:316:23: Error: The argument type 'List<dynamic>' can't be assigned to the parameter type 'Iterable<Future<dynamic>>'.
+ - 'List' is from 'dart:core'.
+ - 'Iterable' is from 'dart:core'.
+ - 'Future' is from 'dart:async'.
+    await Future.wait([
+                      ^
+lib/main.dart:339:5: Error: 'WindowOptions' isn't a type.
+    WindowOptions windowOptions = getHiddenTitleBarWindowOptions(
+    ^^^^^^^^^^^^^
+lib/main.dart:341:5: Error: Undefined name 'windowManager'.
+    windowManager.setOpacity(0);
+    ^^^^^^^^^^^^^
+lib/main.dart:342:11: Error: Undefined name 'windowManager'.
+    await windowManager.waitUntilReadyToShow(windowOptions, null);
+          ^^^^^^^^^^^^^
+lib/main.dart:344:11: Error: Undefined name 'windowManager'.
+    await windowManager.minimize();
+          ^^^^^^^^^^^^^
+lib/main.dart:345:11: Error: Undefined name 'windowManager'.
+    await windowManager.hide();
+          ^^^^^^^^^^^^^
+lib/main.dart:348:15: Error: Undefined name 'windowManager'.
+    if (await windowManager.getOpacity() != 0) {
+              ^^^^^^^^^^^^^
+lib/main.dart:349:13: Error: Undefined name 'windowManager'.
+      await windowManager.setOpacity(0);
+            ^^^^^^^^^^^^^
+lib/main.dart:351:13: Error: Undefined name 'windowManager'.
+      await windowManager.minimize();
+            ^^^^^^^^^^^^^
+lib/main.dart:352:13: Error: Undefined name 'windowManager'.
+      await windowManager.hide();
+            ^^^^^^^^^^^^^
+lib/main.dart:392:9: Error: Undefined name 'windowManager'.
+  await windowManager.ensureInitialized();
+        ^^^^^^^^^^^^^
+lib/main.dart:395:3: Error: 'WindowOptions' isn't a type.
+  WindowOptions windowOptions =
+  ^^^^^^^^^^^^^
+lib/main.dart:398:5: Error: Undefined name 'windowManager'.
+    windowManager.show();
+    ^^^^^^^^^^^^^
+lib/main.dart:399:5: Error: Undefined name 'windowManager'.
+    windowManager.focus();
+    ^^^^^^^^^^^^^
+lib/main.dart:400:5: Error: Undefined name 'windowManager'.
+    windowManager.setOpacity(1);
+    ^^^^^^^^^^^^^
+lib/main.dart:401:5: Error: Undefined name 'windowManager'.
+    windowManager.setAlignment(Alignment.center); // ensure
+    ^^^^^^^^^^^^^
+lib/main.dart:397:3: Error: Undefined name 'windowManager'.
+  windowManager.waitUntilReadyToShow(windowOptions, () async {
+  ^^^^^^^^^^^^^
+lib/main.dart:410:30: Error: Undefined name 'TitleBarStyle'.
+  var defaultTitleBarStyle = TitleBarStyle.hidden;
+                             ^^^^^^^^^^^^^
+lib/main.dart:413:28: Error: Undefined name 'TitleBarStyle'.
+    defaultTitleBarStyle = TitleBarStyle.normal;
+                           ^^^^^^^^^^^^^
+lib/main.dart:415:10: Error: Method not found: 'WindowOptions'.
+  return WindowOptions(
+         ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_tab_page.dart:58:11: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabPageState'.
+ - '_DesktopTabPageState' is from 'package:flutter_hbb/desktop/pages/desktop_tab_page.dart' ('lib/desktop/pages/desktop_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+          windowManager.setSize(getIncomingOnlyHomeSize());
+          ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_tab_page.dart:61:11: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabPageState'.
+ - '_DesktopTabPageState' is from 'package:flutter_hbb/desktop/pages/desktop_tab_page.dart' ('lib/desktop/pages/desktop_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+          windowManager.setSize(getIncomingOnlySettingsSize());
+          ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_tab_page.dart:112:19: Error: The method 'DragToResizeArea' isn't defined for the class '_DesktopTabPageState'.
+ - '_DesktopTabPageState' is from 'package:flutter_hbb/desktop/pages/desktop_tab_page.dart' ('lib/desktop/pages/desktop_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'DragToResizeArea'.
+            () => DragToResizeArea(
+                  ^^^^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:44:12: Error: The method 'DragToResizeArea' isn't defined for the class '_InstallPageState'.
+ - '_InstallPageState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'DragToResizeArea'.
+    return DragToResizeArea(
+           ^^^^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:88:5: Error: The getter 'windowManager' isn't defined for the class '_InstallPageBodyState'.
+ - '_InstallPageBodyState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.addListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:94:5: Error: The getter 'windowManager' isn't defined for the class '_InstallPageBodyState'.
+ - '_InstallPageBodyState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.removeListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:101:11: Error: Superclass has no method named 'onWindowClose'.
+    super.onWindowClose();
+          ^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:102:5: Error: The getter 'windowManager' isn't defined for the class '_InstallPageBodyState'.
+ - '_InstallPageBodyState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.setPreventClose(false);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:103:5: Error: The getter 'windowManager' isn't defined for the class '_InstallPageBodyState'.
+ - '_InstallPageBodyState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.close();
+    ^^^^^^^^^^^^^
+lib/desktop/pages/install_page.dart:221:52: Error: The getter 'windowManager' isn't defined for the class '_InstallPageBodyState'.
+ - '_InstallPageBodyState' is from 'package:flutter_hbb/desktop/pages/install_page.dart' ('lib/desktop/pages/install_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+                          btnEnabled.value ? () => windowManager.close() : null,
+                                                   ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:46:5: Error: The getter 'windowManager' isn't defined for the class '_DesktopServerPageState'.
+ - '_DesktopServerPageState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.addListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:52:5: Error: The getter 'windowManager' isn't defined for the class '_DesktopServerPageState'.
+ - '_DesktopServerPageState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.removeListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:66:11: Error: Superclass has no method named 'onWindowClose'.
+    super.onWindowClose();
+          ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:62:9: Error: The getter 'windowManager' isn't defined for the class '_DesktopServerPageState'.
+ - '_DesktopServerPageState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.setPreventClose(false);
+        ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:63:9: Error: The getter 'windowManager' isn't defined for the class '_DesktopServerPageState'.
+ - '_DesktopServerPageState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.close();
+        ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:71:7: Error: The getter 'windowManager' isn't defined for the class '_DesktopServerPageState'.
+ - '_DesktopServerPageState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      windowManager.close();
+      ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:132:11: Error: The getter 'windowManager' isn't defined for the class 'ConnectionManagerState'.
+ - 'ConnectionManagerState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+          windowManager.setTitle(getWindowNameWithId(client.peerId));
+          ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:295:17: Error: The getter 'windowManager' isn't defined for the class 'ConnectionManagerState'.
+ - 'ConnectionManagerState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+                windowManager.startDragging();
+                ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:330:7: Error: The getter 'windowManager' isn't defined for the class 'ConnectionManagerState'.
+ - 'ConnectionManagerState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      windowManager.close();
+      ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:341:9: Error: The getter 'windowManager' isn't defined for the class 'ConnectionManagerState'.
+ - 'ConnectionManagerState' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.close();
+        ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:392:9: Error: The getter 'windowManager' isn't defined for the class '_CloseButton'.
+ - '_CloseButton' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.close();
+        ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:964:15: Error: The getter 'windowManager' isn't defined for the class '_CmControlPanel'.
+ - '_CmControlPanel' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+              windowManager.minimize();
+              ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:1024:13: Error: The getter 'windowManager' isn't defined for the class '_CmControlPanel'.
+ - '_CmControlPanel' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+            windowManager.minimize();
+            ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:1047:25: Error: The getter 'windowManager' isn't defined for the class '_CmControlPanel'.
+ - '_CmControlPanel' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+                        windowManager.minimize();
+                        ^^^^^^^^^^^^^
+lib/desktop/pages/server_page.dart:1150:7: Error: The getter 'windowManager' isn't defined for the class '_CmControlPanel'.
+ - '_CmControlPanel' is from 'package:flutter_hbb/desktop/pages/server_page.dart' ('lib/desktop/pages/server_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      windowManager.close();
+      ^^^^^^^^^^^^^
+lib/models/state_model.dart:105:18: Error: The getter 'WindowController' isn't defined for the class 'StateGlobal'.
+ - 'StateGlobal' is from 'package:flutter_hbb/models/state_model.dart' ('lib/models/state_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      final wc = WindowController.fromWindowId(windowId);
+                 ^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:106:19: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+        if (await DesktopMultiWindow.invokeMethod(
+                  ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:154:36: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    final windowController = await DesktopMultiWindow.createWindow(msg);
+                                   ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:162:23: Error: The argument type 'num' can't be assigned to the parameter type 'double'.
+            Size(1280 + windowId * 20, 720 + windowId * 20))
+                      ^
+lib/utils/multi_window_manager.dart:162:44: Error: The argument type 'num' can't be assigned to the parameter type 'double'.
+            Size(1280 + windowId * 20, 720 + windowId * 20))
+                                           ^
+lib/utils/multi_window_manager.dart:207:19: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+            await DesktopMultiWindow.invokeMethod(windowId, methodName, msg);
+                  ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:209:15: Error: The getter 'WindowController' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+              WindowController.fromWindowId(windowId).show();
+              ^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:260:19: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+        if (await DesktopMultiWindow.invokeMethod(
+                  ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:361:17: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+      if (await DesktopMultiWindow.invokeMethod(
+                ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:395:19: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+            await DesktopMultiWindow.invokeMethod(windowId, methodName, args);
+                  ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:400:15: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+        await DesktopMultiWindow.invokeMethod(wnds[0], methodName, args);
+              ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:449:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.setMethodHandler(handler);
+    ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:481:15: Error: The getter 'WindowController' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        await WindowController.fromWindowId(wId).setPreventClose(false);
+              ^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:482:15: Error: The getter 'WindowController' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        await WindowController.fromWindowId(wId).close();
+              ^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:494:29: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+      final windows = await DesktopMultiWindow.getAllSubWindowIds();
+                            ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:550:29: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+          final res = await DesktopMultiWindow.invokeMethod(
+                            ^^^^^^^^^^^^^^^^^^
+lib/utils/multi_window_manager.dart:567:24: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'RustDeskMultiWindowManager'.
+ - 'RustDeskMultiWindowManager' is from 'package:flutter_hbb/utils/multi_window_manager.dart' ('lib/utils/multi_window_manager.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    String res = await DesktopMultiWindow.invokeMethod(
+                       ^^^^^^^^^^^^^^^^^^
+lib/common.dart:722:13: Error: Undefined name 'windowManager'.
+      await windowManager.restore();
+            ^^^^^^^^^^^^^
+lib/common.dart:724:11: Error: Undefined name 'windowManager'.
+    await windowManager.show();
+          ^^^^^^^^^^^^^
+lib/common.dart:725:11: Error: Undefined name 'windowManager'.
+    await windowManager.focus();
+          ^^^^^^^^^^^^^
+lib/common.dart:728:5: Error: Undefined name 'WindowController'.
+    WindowController.fromWindowId(id)
+    ^^^^^^^^^^^^^^^^
+lib/common.dart:1737:49: Error: Undefined name 'windowManager'.
+          bind.isIncomingOnly() ? false : await windowManager.isMaximized();
+                                                ^^^^^^^^^^^^^
+lib/common.dart:1741:26: Error: Undefined name 'windowManager'.
+        position = await windowManager.getPosition(
+                         ^^^^^^^^^^^^^
+lib/common.dart:1743:20: Error: Undefined name 'windowManager'.
+        sz = await windowManager.getSize(
+                   ^^^^^^^^^^^^^
+lib/common.dart:1748:18: Error: Undefined name 'WindowController'.
+      final wc = WindowController.fromWindowId(windowId!);
+                 ^^^^^^^^^^^^^^^^
+lib/common.dart:1795:28: Error: Undefined name 'DesktopMultiWindow'.
+  final remoteList = await DesktopMultiWindow.invokeMethod(
+                           ^^^^^^^^^^^^^^^^^^
+lib/common.dart:1879:44: Error: Method not found: 'getScreenList'.
+    for (final screen in await window_size.getScreenList()) {
+                                           ^^^^^^^^^^^^^
+lib/common.dart:1988:17: Error: Undefined name 'windowManager'.
+          await windowManager.center();
+                ^^^^^^^^^^^^^
+lib/common.dart:1990:17: Error: Undefined name 'windowManager'.
+          await windowManager.setPosition(offsetLeftTop,
+                ^^^^^^^^^^^^^
+lib/common.dart:1997:17: Error: Undefined name 'windowManager'.
+          await windowManager.maximize();
+                ^^^^^^^^^^^^^
+lib/common.dart:2008:19: Error: Undefined name 'windowManager'.
+            await windowManager.setSize(size,
+                  ^^^^^^^^^^^^^
+lib/common.dart:2013:19: Error: Undefined name 'windowManager'.
+            await windowManager.setSize(size,
+                  ^^^^^^^^^^^^^
+lib/common.dart:2018:19: Error: Undefined name 'windowManager'.
+            await windowManager.setSize(size,
+                  ^^^^^^^^^^^^^
+lib/common.dart:2026:18: Error: Undefined name 'WindowController'.
+      final wc = WindowController.fromWindowId(windowId!);
+                 ^^^^^^^^^^^^^^^^
+lib/common.dart:2046:13: Error: Undefined name 'DesktopMultiWindow'.
+            DesktopMultiWindow.invokeMethod(
+            ^^^^^^^^^^^^^^^^^^
+lib/common.dart:1950:48: Error: The argument type 'String?' can't be assigned to the parameter type 'String' because 'String?' is nullable and 'String' isn't.
+  var lpos = LastWindowPosition.loadFromString(pos);
+                                               ^
+lib/common.dart:2077:31: Error: Method not found: 'getInitialLink'.
+    final initialLink = await getInitialLink();
+                              ^^^^^^^^^^^^^^
+lib/common.dart:2104:15: Error: Undefined name 'uriLinkStream'.
+  final sub = uriLinkStream.listen((Uri? uri) {
+              ^^^^^^^^^^^^^
+lib/common.dart:2619:23: Error: Undefined name 'DesktopMultiWindow'.
+    final ids = await DesktopMultiWindow.getAllSubWindowIds();
+                      ^^^^^^^^^^^^^^^^^^
+lib/common.dart:2621:7: Error: Undefined name 'DesktopMultiWindow'.
+      DesktopMultiWindow.invokeMethod(id, kWindowActionRebuild);
+      ^^^^^^^^^^^^^^^^^^
+lib/common.dart:2658:13: Error: Undefined name 'windowManager'.
+      await windowManager.setPreventClose(false);
+            ^^^^^^^^^^^^^
+lib/common.dart:2659:13: Error: Undefined name 'windowManager'.
+      await windowManager.close();
+            ^^^^^^^^^^^^^
+lib/common.dart:2926:11: Error: Undefined name 'windowManager'.
+    await windowManager.show();
+          ^^^^^^^^^^^^^
+lib/common.dart:3117:42: Error: Method not found: 'getScreenList'.
+    for (var screen in await window_size.getScreenList()) {
+                                         ^^^^^^^^^^^^^
+lib/common.dart:3219:3: Error: Undefined name 'DesktopMultiWindow'.
+  DesktopMultiWindow.invokeMethod(
+  ^^^^^^^^^^^^^^^^^^
+lib/common.dart:3241:14: Error: Undefined name 'WindowController'.
+  final wc = WindowController.fromWindowId(stateGlobal.windowId);
+             ^^^^^^^^^^^^^^^^
+lib/common.dart:3701:5: Error: Undefined name 'windowManager'.
+    windowManager.setResizable(resizable);
+    ^^^^^^^^^^^^^
+lib/common.dart:3745:5: Error: Undefined name 'windowManager'.
+    windowManager.setMovable(false);
+    ^^^^^^^^^^^^^
+lib/common.dart:3747:5: Error: Undefined name 'WindowController'.
+    WindowController.fromWindowId(windowId).setMovable(false);
+    ^^^^^^^^^^^^^^^^
+lib/common.dart:3770:9: Error: Undefined name 'ResizeEdge'.
+        ResizeEdge.topLeft,
+        ^^^^^^^^^^
+lib/common.dart:3771:9: Error: Undefined name 'ResizeEdge'.
+        ResizeEdge.top,
+        ^^^^^^^^^^
+lib/common.dart:3772:9: Error: Undefined name 'ResizeEdge'.
+        ResizeEdge.topRight,
+        ^^^^^^^^^^
+lib/common.dart:3778:9: Error: Undefined name 'SubWindowResizeEdge'.
+        SubWindowResizeEdge.topLeft,
+        ^^^^^^^^^^^^^^^^^^^
+lib/common.dart:3779:9: Error: Undefined name 'SubWindowResizeEdge'.
+        SubWindowResizeEdge.top,
+        ^^^^^^^^^^^^^^^^^^^
+lib/common.dart:3780:9: Error: Undefined name 'SubWindowResizeEdge'.
+        SubWindowResizeEdge.topRight,
+        ^^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:339:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.addListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:340:5: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.addListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:344:9: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.isMaximized().then((maximized) {
+        ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:351:20: Error: The getter 'WindowController' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        final wc = WindowController.fromWindowId(kWindowId!);
+                   ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:365:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.removeListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:366:5: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.removeListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:391:11: Error: Superclass has no method named 'onWindowMinimize'.
+    super.onWindowMinimize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:398:11: Error: Superclass has no method named 'onWindowMaximize'.
+    super.onWindowMaximize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:405:11: Error: Superclass has no method named 'onWindowUnmaximize'.
+    super.onWindowUnmaximize();
+          ^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:419:11: Error: Superclass has no method named 'onWindowMoved'.
+    super.onWindowMoved();
+          ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:425:11: Error: Superclass has no method named 'onWindowMoved'.
+    super.onWindowMoved();
+          ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:431:24: Error: 'WindowController' isn't a type.
+    notMainWindowClose(WindowController windowController) async {
+                       ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:501:11: Error: Superclass has no method named 'onWindowClose'.
+    super.onWindowClose();
+          ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:430:38: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    mainWindowClose() async => await windowManager.hide();
+                                     ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:469:28: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      if (isMacOS && await windowManager.isFullScreen()) {
+                           ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:470:15: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        await windowManager.setFullScreen(false);
+              ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:472:29: Error: The getter 'windowManager' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+          () async => await windowManager.isFullScreen(),
+                            ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:480:26: Error: The getter 'WindowController' isn't defined for the class '_DesktopTabState'.
+ - '_DesktopTabState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      final controller = WindowController.fromWindowId(kWindowId!);
+                         ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:772:23: Error: The getter 'windowManager' isn't defined for the class 'WindowActionPanelState'.
+ - 'WindowActionPanelState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+                      windowManager.minimize();
+                      ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:774:23: Error: The getter 'WindowController' isn't defined for the class 'WindowActionPanelState'.
+ - 'WindowActionPanelState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+                      WindowController.fromWindowId(kWindowId!).minimize();
+                      ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:803:33: Error: The getter 'windowManager' isn't defined for the class 'WindowActionPanelState'.
+ - 'WindowActionPanelState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+                          await windowManager.close();
+                                ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:805:33: Error: The getter 'WindowController' isn't defined for the class 'WindowActionPanelState'.
+ - 'WindowActionPanelState' is from 'package:flutter_hbb/desktop/widgets/tabbar_widget.dart' ('lib/desktop/widgets/tabbar_widget.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+                          await WindowController.fromWindowId(kWindowId!)
+                                ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:829:5: Error: Undefined name 'windowManager'.
+    windowManager.startDragging();
+    ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:831:5: Error: Undefined name 'WindowController'.
+    WindowController.fromWindowId(kWindowId!).startDragging();
+    ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:837:5: Error: Undefined name 'windowManager'.
+    windowManager.setMovable(movable);
+    ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:839:5: Error: Undefined name 'WindowController'.
+    WindowController.fromWindowId(kWindowId!).setMovable(movable);
+    ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:847:15: Error: Undefined name 'windowManager'.
+    if (await windowManager.isMaximized()) {
+              ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:848:7: Error: Undefined name 'windowManager'.
+      windowManager.unmaximize();
+      ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:851:7: Error: Undefined name 'windowManager'.
+      windowManager.maximize();
+      ^^^^^^^^^^^^^
+lib/desktop/widgets/tabbar_widget.dart:855:16: Error: Undefined name 'WindowController'.
+    final wc = WindowController.fromWindowId(kWindowId!);
+               ^^^^^^^^^^^^^^^^
+lib/models/chat_model.dart:43:3: Error: 'ChatUser' isn't a type.
+  ChatUser chatUser;
+  ^^^^^^^^
+lib/models/chat_model.dart:44:8: Error: 'ChatMessage' isn't a type.
+  List<ChatMessage> chatMessages;
+       ^^^^^^^^^^^
+lib/models/chat_model.dart:47:15: Error: 'ChatMessage' isn't a type.
+  void insert(ChatMessage cm) {
+              ^^^^^^^^^^^
+lib/models/chat_model.dart:87:9: Error: 'ChatUser' isn't a type.
+  final ChatUser me = ChatUser(
+        ^^^^^^^^
+lib/models/chat_model.dart:87:23: Error: Method not found: 'ChatUser'.
+  final ChatUser me = ChatUser(
+                      ^^^^^^^^
+lib/models/chat_model.dart:134:17: Error: 'ChatMessage' isn't a type.
+          final ChatMessage message = ChatMessage(
+                ^^^^^^^^^^^
+lib/models/chat_model.dart:134:39: Error: The method 'ChatMessage' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ChatMessage'.
+          final ChatMessage message = ChatMessage(
+                                      ^^^^^^^^^^^
+lib/models/chat_model.dart:300:13: Error: The getter 'windowManager' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      await windowManager.show();
+            ^^^^^^^^^^^^^
+lib/models/chat_model.dart:301:13: Error: The getter 'windowManager' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      await windowManager.setSizeAlignment(
+            ^^^^^^^^^^^^^
+lib/models/chat_model.dart:312:13: Error: The getter 'windowManager' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      await windowManager.show();
+            ^^^^^^^^^^^^^
+lib/models/chat_model.dart:313:13: Error: The getter 'windowManager' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+      await windowManager.setSizeAlignment(
+            ^^^^^^^^^^^^^
+lib/models/chat_model.dart:332:24: Error: The method 'ChatUser' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ChatUser'.
+      final chatUser = ChatUser(
+                       ^^^^^^^^
+lib/models/chat_model.dart:378:16: Error: 'ChatUser' isn't a type.
+    late final ChatUser chatUser;
+               ^^^^^^^^
+lib/models/chat_model.dart:380:18: Error: The method 'ChatUser' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ChatUser'.
+      chatUser = ChatUser(
+                 ^^^^^^^^
+lib/models/chat_model.dart:394:21: Error: The getter 'WindowController' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+          if (await WindowController.fromWindowId(stateGlobal.windowId)
+                    ^^^^^^^^^^^^^^^^
+lib/models/chat_model.dart:431:18: Error: The method 'ChatUser' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ChatUser'.
+      chatUser = ChatUser(id: client.peerId, firstName: client.name);
+                 ^^^^^^^^
+lib/models/chat_model.dart:434:9: Error: The method 'ChatMessage' isn't defined for the class 'ChatModel'.
+ - 'ChatModel' is from 'package:flutter_hbb/models/chat_model.dart' ('lib/models/chat_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ChatMessage'.
+        ChatMessage(text: text, user: chatUser, createdAt: DateTime.now()));
+        ^^^^^^^^^^^
+lib/models/chat_model.dart:444:8: Error: 'ChatMessage' isn't a type.
+  send(ChatMessage message) {
+       ^^^^^^^^^^^
+lib/models/chat_model.dart:461:33: Error: 'ChatMessage' isn't a type.
+  insertMessage(MessageKey key, ChatMessage message) {
+                                ^^^^^^^^^^^
+lib/models/model.dart:727:11: Error: The getter 'windowManager' isn't defined for the class 'FfiModel'.
+ - 'FfiModel' is from 'package:flutter_hbb/models/model.dart' ('lib/models/model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+          windowManager.close();
+          ^^^^^^^^^^^^^
+lib/models/model.dart:3062:23: Error: 'EventToUI' isn't a type.
+    late final Stream<EventToUI> stream;
+                      ^^^^^^^^^
+lib/models/model.dart:3115:24: Error: 'EventToUI_Event' isn't a type.
+        if (message is EventToUI_Event) {
+                       ^^^^^^^^^^^^^^^
+lib/models/model.dart:3131:31: Error: 'EventToUI_Rgba' isn't a type.
+        } else if (message is EventToUI_Rgba) {
+                              ^^^^^^^^^^^^^^
+lib/models/model.dart:3146:31: Error: 'EventToUI_Texture' isn't a type.
+        } else if (message is EventToUI_Texture) {
+                              ^^^^^^^^^^^^^^^^^
+lib/models/model.dart:3094:36: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'FFI'.
+ - 'FFI' is from 'package:flutter_hbb/models/model.dart' ('lib/models/model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+          final cachedData = await DesktopMultiWindow.invokeMethod(
+                                   ^^^^^^^^^^^^^^^^^^
+lib/common/widgets/chat_page.dart:99:32: Error: The method 'DashChat' isn't defined for the class 'ChatPage'.
+ - 'ChatPage' is from 'package:flutter_hbb/common/widgets/chat_page.dart' ('lib/common/widgets/chat_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'DashChat'.
+                  final chat = DashChat(
+                               ^^^^^^^^
+lib/common/widgets/chat_page.dart:106:35: Error: The method 'InputOptions' isn't defined for the class 'ChatPage'.
+ - 'ChatPage' is from 'package:flutter_hbb/common/widgets/chat_page.dart' ('lib/common/widgets/chat_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'InputOptions'.
+                    inputOptions: InputOptions(
+                                  ^^^^^^^^^^^^
+lib/common/widgets/chat_page.dart:126:42: Error: The method 'defaultSendButton' isn't defined for the class 'ChatPage'.
+ - 'ChatPage' is from 'package:flutter_hbb/common/widgets/chat_page.dart' ('lib/common/widgets/chat_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'defaultSendButton'.
+                      sendButtonBuilder: defaultSendButton(
+                                         ^^^^^^^^^^^^^^^^^
+lib/common/widgets/chat_page.dart:133:37: Error: The method 'MessageOptions' isn't defined for the class 'ChatPage'.
+ - 'ChatPage' is from 'package:flutter_hbb/common/widgets/chat_page.dart' ('lib/common/widgets/chat_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'MessageOptions'.
+                    messageOptions: MessageOptions(
+                                    ^^^^^^^^^^^^^^
+lib/common/widgets/chat_page.dart:160:32: Error: The method 'defaultMessageDecoration' isn't defined for the class 'ChatPage'.
+ - 'ChatPage' is from 'package:flutter_hbb/common/widgets/chat_page.dart' ('lib/common/widgets/chat_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'defaultMessageDecoration'.
+                        return defaultMessageDecoration(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/desktop_home_page.dart:747:29: Error: 'Screen' isn't a type.
+    screenToMap(window_size.Screen screen) => {
+                            ^^^^^^
+lib/desktop/pages/desktop_home_page.dart:769:43: Error: Method not found: 'getWindowInfo'.
+        final screen = (await window_size.getWindowInfo()).screen;
+                                          ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_home_page.dart:777:32: Error: Method not found: 'getScreenList'.
+            (await window_size.getScreenList()).map(screenToMap).toList());
+                               ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_home_page.dart:851:9: Error: The getter 'windowManager' isn't defined for the class '_DesktopHomePageState'.
+ - '_DesktopHomePageState' is from 'package:flutter_hbb/desktop/pages/desktop_home_page.dart' ('lib/desktop/pages/desktop_home_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        windowManager.setSize(getIncomingOnlyHomeSize());
+        ^^^^^^^^^^^^^
+lib/desktop/pages/desktop_setting_page.dart:1670:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1675:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1693:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1698:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1716:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1721:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1726:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1731:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1779:35: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+            onChanged: isOptFixed ? null : onChanged));
+                                  ^
+lib/desktop/pages/desktop_setting_page.dart:1786:35: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+            onChanged: isOptFixed ? null : onChanged));
+                                  ^
+lib/desktop/pages/desktop_setting_page.dart:1796:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1801:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1806:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/desktop/pages/desktop_setting_page.dart:1811:33: Error: The argument type 'Future<Null> Function(String)?' can't be assigned to the parameter type 'dynamic Function(dynamic)?'.
+ - 'Future' is from 'dart:async'.
+          onChanged: isOptFixed ? null : onChanged),
+                                ^
+lib/models/server_model.dart:168:15: Error: The getter 'windowManager' isn't defined for the class 'ServerModel'.
+ - 'ServerModel' is from 'package:flutter_hbb/models/server_model.dart' ('lib/models/server_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+              windowManager.close();
+              ^^^^^^^^^^^^^
+lib/models/server_model.dart:605:22: Error: The getter 'windowManager' isn't defined for the class 'ServerModel'.
+ - 'ServerModel' is from 'package:flutter_hbb/models/server_model.dart' ('lib/models/server_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+        if (!hideCm) windowManager.minimize();
+                     ^^^^^^^^^^^^^
+lib/desktop/pages/file_manager_tab_page.dart:34:7: Error: The getter 'WindowController' isn't defined for the class '_FileManagerTabPageState'.
+ - '_FileManagerTabPageState' is from 'package:flutter_hbb/desktop/pages/file_manager_tab_page.dart' ('lib/desktop/pages/file_manager_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId())
+      ^^^^^^^^^^^^^^^^
+lib/desktop/pages/file_manager_tab_page.dart:115:11: Error: The method 'SubWindowDragToResizeArea' isn't defined for the class '_FileManagerTabPageState'.
+ - '_FileManagerTabPageState' is from 'package:flutter_hbb/desktop/pages/file_manager_tab_page.dart' ('lib/desktop/pages/file_manager_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SubWindowDragToResizeArea'.
+        : SubWindowDragToResizeArea(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/file_manager_tab_page.dart:125:7: Error: The getter 'WindowController' isn't defined for the class '_FileManagerTabPageState'.
+ - '_FileManagerTabPageState' is from 'package:flutter_hbb/desktop/pages/file_manager_tab_page.dart' ('lib/desktop/pages/file_manager_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId()).close();
+      ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:73:9: Error: The getter 'WindowController' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        WindowController.fromWindowId(params['windowId'])
+        ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:219:21: Error: The method 'SubWindowDragToResizeArea' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SubWindowDragToResizeArea'.
+        : Obx(() => SubWindowDragToResizeArea(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:262:17: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+          await DesktopMultiWindow.invokeMethod(
+                ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:321:34: Error: The getter 'WindowController' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        final windowController = WindowController.fromWindowId(windowId());
+                                 ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:381:17: Error: The getter 'WindowController' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+          await WindowController.fromWindowId(windowId()).setFullscreen(false);
+                ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_tab_page.dart:467:20: Error: The getter 'WindowController' isn't defined for the class '_ViewCameraTabPageState'.
+ - '_ViewCameraTabPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_tab_page.dart' ('lib/desktop/pages/view_camera_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        final wc = WindowController.fromWindowId(windowId());
+                   ^^^^^^^^^^^^^^^^
+lib/desktop/pages/port_forward_tab_page.dart:34:7: Error: The getter 'WindowController' isn't defined for the class '_PortForwardTabPageState'.
+ - '_PortForwardTabPageState' is from 'package:flutter_hbb/desktop/pages/port_forward_tab_page.dart' ('lib/desktop/pages/port_forward_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId())
+      ^^^^^^^^^^^^^^^^
+lib/desktop/pages/port_forward_tab_page.dart:131:19: Error: The method 'SubWindowDragToResizeArea' isn't defined for the class '_PortForwardTabPageState'.
+ - '_PortForwardTabPageState' is from 'package:flutter_hbb/desktop/pages/port_forward_tab_page.dart' ('lib/desktop/pages/port_forward_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SubWindowDragToResizeArea'.
+            () => SubWindowDragToResizeArea(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/port_forward_tab_page.dart:142:7: Error: The getter 'WindowController' isn't defined for the class '_PortForwardTabPageState'.
+ - '_PortForwardTabPageState' is from 'package:flutter_hbb/desktop/pages/port_forward_tab_page.dart' ('lib/desktop/pages/port_forward_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId()).close();
+      ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:74:9: Error: The getter 'WindowController' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        WindowController.fromWindowId(params['windowId'])
+        ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:219:21: Error: The method 'SubWindowDragToResizeArea' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SubWindowDragToResizeArea'.
+        : Obx(() => SubWindowDragToResizeArea(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:264:17: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+          await DesktopMultiWindow.invokeMethod(
+                ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:350:34: Error: The getter 'WindowController' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        final windowController = WindowController.fromWindowId(windowId());
+                                 ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:411:17: Error: The getter 'WindowController' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+          await WindowController.fromWindowId(windowId()).setFullscreen(false);
+                ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_tab_page.dart:496:20: Error: The getter 'WindowController' isn't defined for the class '_ConnectionTabPageState'.
+ - '_ConnectionTabPageState' is from 'package:flutter_hbb/desktop/pages/remote_tab_page.dart' ('lib/desktop/pages/remote_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+        final wc = WindowController.fromWindowId(windowId());
+                   ^^^^^^^^^^^^^^^^
+lib/desktop/pages/terminal_tab_page.dart:40:7: Error: The getter 'WindowController' isn't defined for the class '_TerminalTabPageState'.
+ - '_TerminalTabPageState' is from 'package:flutter_hbb/desktop/pages/terminal_tab_page.dart' ('lib/desktop/pages/terminal_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId())
+      ^^^^^^^^^^^^^^^^
+lib/desktop/pages/terminal_tab_page.dart:379:11: Error: The method 'SubWindowDragToResizeArea' isn't defined for the class '_TerminalTabPageState'.
+ - '_TerminalTabPageState' is from 'package:flutter_hbb/desktop/pages/terminal_tab_page.dart' ('lib/desktop/pages/terminal_tab_page.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SubWindowDragToResizeArea'.
+        : SubWindowDragToResizeArea(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/terminal_tab_page.dart:389:7: Error: The getter 'WindowController' isn't defined for the class '_TerminalTabPageState'.
+ - '_TerminalTabPageState' is from 'package:flutter_hbb/desktop/pages/terminal_tab_page.dart' ('lib/desktop/pages/terminal_tab_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      WindowController.fromWindowId(windowId()).close();
+      ^^^^^^^^^^^^^^^^
+lib/models/input_model.dart:1082:16: Error: Undefined name 'WindowController'.
+    final wc = WindowController.fromWindowId(kWindowId!);
+               ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:150:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_RemotePageState'.
+ - '_RemotePageState' is from 'package:flutter_hbb/desktop/pages/remote_page.dart' ('lib/desktop/pages/remote_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.addListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:172:11: Error: Superclass has no method named 'onWindowBlur'.
+    super.onWindowBlur();
+          ^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:187:11: Error: Superclass has no method named 'onWindowFocus'.
+    super.onWindowFocus();
+          ^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:197:11: Error: Superclass has no method named 'onWindowRestore'.
+    super.onWindowRestore();
+          ^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:211:11: Error: Superclass has no method named 'onWindowMaximize'.
+    super.onWindowMaximize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:219:11: Error: Superclass has no method named 'onWindowMinimize'.
+    super.onWindowMinimize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:227:11: Error: Superclass has no method named 'onWindowEnterFullScreen'.
+    super.onWindowEnterFullScreen();
+          ^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:235:11: Error: Superclass has no method named 'onWindowLeaveFullScreen'.
+    super.onWindowLeaveFullScreen();
+          ^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/remote_page.dart:253:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_RemotePageState'.
+ - '_RemotePageState' is from 'package:flutter_hbb/desktop/pages/remote_page.dart' ('lib/desktop/pages/remote_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.removeListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:135:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_ViewCameraPageState'.
+ - '_ViewCameraPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_page.dart' ('lib/desktop/pages/view_camera_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.addListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:157:11: Error: Superclass has no method named 'onWindowBlur'.
+    super.onWindowBlur();
+          ^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:172:11: Error: Superclass has no method named 'onWindowFocus'.
+    super.onWindowFocus();
+          ^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:182:11: Error: Superclass has no method named 'onWindowRestore'.
+    super.onWindowRestore();
+          ^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:196:11: Error: Superclass has no method named 'onWindowMaximize'.
+    super.onWindowMaximize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:204:11: Error: Superclass has no method named 'onWindowMinimize'.
+    super.onWindowMinimize();
+          ^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:212:11: Error: Superclass has no method named 'onWindowEnterFullScreen'.
+    super.onWindowEnterFullScreen();
+          ^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:220:11: Error: Superclass has no method named 'onWindowLeaveFullScreen'.
+    super.onWindowLeaveFullScreen();
+          ^^^^^^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/view_camera_page.dart:238:5: Error: The getter 'DesktopMultiWindow' isn't defined for the class '_ViewCameraPageState'.
+ - '_ViewCameraPageState' is from 'package:flutter_hbb/desktop/pages/view_camera_page.dart' ('lib/desktop/pages/view_camera_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+    DesktopMultiWindow.removeListener(this);
+    ^^^^^^^^^^^^^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:370:13: Error: The getter 'WindowController' isn't defined for the class '_RemoteToolbarState'.
+ - '_RemoteToolbarState' is from 'package:flutter_hbb/desktop/widgets/remote_toolbar.dart' ('lib/desktop/widgets/remote_toolbar.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      await WindowController.fromWindowId(windowId).minimize();
+            ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:864:15: Error: 'Screen' isn't a type.
+  window_size.Screen? _screen;
+              ^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:898:29: Error: The getter 'WindowController' isn't defined for the class 'ScreenAdjustor'.
+ - 'ScreenAdjustor' is from 'package:flutter_hbb/desktop/widgets/remote_toolbar.dart' ('lib/desktop/widgets/remote_toolbar.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      final wndRect = await WindowController.fromWindowId(windowId).getFrame();
+                            ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:936:13: Error: The getter 'WindowController' isn't defined for the class 'ScreenAdjustor'.
+ - 'ScreenAdjustor' is from 'package:flutter_hbb/desktop/widgets/remote_toolbar.dart' ('lib/desktop/widgets/remote_toolbar.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'WindowController'.
+      await WindowController.fromWindowId(windowId)
+            ^^^^^^^^^^^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:949:29: Error: Method not found: 'Screen'.
+      _screen = window_size.Screen(
+                            ^^^^^^
+lib/desktop/widgets/remote_toolbar.dart:1353:38: Error: Method not found: 'getWindowInfo'.
+    final window = await window_size.getWindowInfo();
+                                     ^^^^^^^^^^^^^
+lib/common/widgets/dialog.dart:1360:21: Error: A value of type 'String?' can't be assigned to a variable of type 'String' because 'String?' is nullable and 'String' isn't.
+  controller.text = osPassword;
+                    ^
+lib/models/native_model.dart:35:8: Error: 'RustdeskImpl' isn't a type.
+  late RustdeskImpl _ffiBind;
+       ^^^^^^^^^^^^
+lib/models/native_model.dart:142:18: Error: The method 'RustdeskImpl' isn't defined for the class 'PlatformFFI'.
+ - 'PlatformFFI' is from 'package:flutter_hbb/models/native_model.dart' ('lib/models/native_model.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'RustdeskImpl'.
+      _ffiBind = RustdeskImpl(dylib);
+                 ^^^^^^^^^^^^
+lib/models/native_model.dart:243:26: Error: 'RustdeskImpl' isn't a type.
+  void _startListenEvent(RustdeskImpl rustdeskImpl) {
+                         ^^^^^^^^^^^^
+lib/common/widgets/peers_view.dart:114:5: Error: The getter 'windowManager' isn't defined for the class '_PeersViewState'.
+ - '_PeersViewState' is from 'package:flutter_hbb/common/widgets/peers_view.dart' ('lib/common/widgets/peers_view.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.addListener(this);
+    ^^^^^^^^^^^^^
+lib/common/widgets/peers_view.dart:121:5: Error: The getter 'windowManager' isn't defined for the class '_PeersViewState'.
+ - '_PeersViewState' is from 'package:flutter_hbb/common/widgets/peers_view.dart' ('lib/common/widgets/peers_view.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.removeListener(this);
+    ^^^^^^^^^^^^^
+lib/common/widgets/peers_view.dart:283:23: Error: The getter 'DynamicGridView' isn't defined for the class '_PeersViewState'.
+ - '_PeersViewState' is from 'package:flutter_hbb/common/widgets/peers_view.dart' ('lib/common/widgets/peers_view.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DynamicGridView'.
+                    : DynamicGridView.builder(
+                      ^^^^^^^^^^^^^^^
+lib/common/widgets/peers_view.dart:284:39: Error: The method 'SliverGridDelegateWithWrapping' isn't defined for the class '_PeersViewState'.
+ - '_PeersViewState' is from 'package:flutter_hbb/common/widgets/peers_view.dart' ('lib/common/widgets/peers_view.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SliverGridDelegateWithWrapping'.
+                        gridDelegate: SliverGridDelegateWithWrapping(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/models/terminal_model.dart:268:9: Error: The getter 'DesktopMultiWindow' isn't defined for the class 'TerminalModel'.
+ - 'TerminalModel' is from 'package:flutter_hbb/models/terminal_model.dart' ('lib/models/terminal_model.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DesktopMultiWindow'.
+        DesktopMultiWindow.invokeMethod(
+        ^^^^^^^^^^^^^^^^^^
+lib/desktop/pages/connection_page.dart:236:5: Error: The getter 'windowManager' isn't defined for the class '_ConnectionPageState'.
+ - '_ConnectionPageState' is from 'package:flutter_hbb/desktop/pages/connection_page.dart' ('lib/desktop/pages/connection_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.addListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/connection_page.dart:242:5: Error: The getter 'windowManager' isn't defined for the class '_ConnectionPageState'.
+ - '_ConnectionPageState' is from 'package:flutter_hbb/desktop/pages/connection_page.dart' ('lib/desktop/pages/connection_page.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'windowManager'.
+    windowManager.removeListener(this);
+    ^^^^^^^^^^^^^
+lib/desktop/pages/connection_page.dart:258:11: Error: Superclass has no method named 'onWindowEvent'.
+    super.onWindowEvent(eventName);
+          ^^^^^^^^^^^^^
+lib/desktop/pages/connection_page.dart:286:11: Error: Superclass has no method named 'onWindowClose'.
+    super.onWindowClose();
+          ^^^^^^^^^^^^^
+lib/common/widgets/toolbar.dart:525:39: Error: A value of type 'bool?' can't be assigned to a variable of type 'bool' because 'bool?' is nullable and 'bool' isn't.
+          showCursorLockState.value = value;
+                                      ^
+lib/common/widgets/toolbar.dart:523:11: Context: Variable 'value' could not be promoted due to an assignment.
+Try null checking the variable after the assignment.  See http://dart.dev/go/non-promo-write
+          value = bind.sessionGetToggleOptionSync(
+          ^
+lib/common/widgets/address_book.dart:343:36: Error: The getter 'DynamicGridView' isn't defined for the class '_AddressBookState'.
+ - '_AddressBookState' is from 'package:flutter_hbb/common/widgets/address_book.dart' ('lib/common/widgets/address_book.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'DynamicGridView'.
+      gridView(bool isPortrait) => DynamicGridView.builder(
+                                   ^^^^^^^^^^^^^^^
+lib/common/widgets/address_book.dart:345:25: Error: The method 'SliverGridDelegateWithWrapping' isn't defined for the class '_AddressBookState'.
+ - '_AddressBookState' is from 'package:flutter_hbb/common/widgets/address_book.dart' ('lib/common/widgets/address_book.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SliverGridDelegateWithWrapping'.
+          gridDelegate: SliverGridDelegateWithWrapping(),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Unhandled exception:
+FileSystemException(uri=org-dartlang-untranslatable-uri:package%3Adesktop_multi_window%2Fdesktop_multi_window.dart; message=StandardFileSystem only supports file:* and data:* URIs)
+#0      StandardFileSystem.entityForUri (package:front_end/src/api_prototype/standard_file_system.dart:35)
+#1      asFileUri (package:vm/kernel_front_end.dart:792)
+#2      writeDepfile (package:vm/kernel_front_end.dart:932)
+<asynchronous suspension>
+#3      FrontendCompiler.compile (package:frontend_server/frontend_server.dart:704)
+<asynchronous suspension>
+#4      starter (package:frontend_server/starter.dart:109)
+<asynchronous suspension>
+#5      main (file:///b/s/w/ir/x/w/sdk/pkg/frontend_server/bin/frontend_server_starter.dart:13)
+<asynchronous suspension>
+
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+> Process 'command '/opt/flutter/bin/flutter'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 19s
+Running Gradle task 'assembleRelease'...                           80.0s
+Gradle task assembleRelease failed with exit code 1

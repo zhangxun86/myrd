@@ -1,0 +1,24 @@
+🚀 快速策略：使用占位符进行Flutter APK构建
+📦 创建占位符librustdesk.so文件...
+🔨 编译占位符库...
+✅ 占位符库创建成功: /root/rustdesk/myrd/flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so
+📏 文件大小: 8.0K
+/root/rustdesk/myrd/flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, not stripped
+🎊 现在可以尝试Flutter APK构建了!
+📱 进入Flutter构建阶段...
+📂 检查Flutter项目结构:
+total 16
+drwxr-xr-x 2 root root 4096 Sep 13 08:28 .
+drwxr-xr-x 3 root root 4096 Sep 12 22:52 ..
+-rwxr-xr-x 1 root root 5520 Sep 13 08:28 librustdesk.so
+🚀 开始Flutter APK构建...
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Resolving dependencies...
+Git error. Command: `git clone --mirror https://github.com/rustdesk-org/dynamic_layouts.git /root/.pub-cache/_temp/dirNVYYRA`
+stdout: 
+stderr: Cloning into bare repository '/root/.pub-cache/_temp/dirNVYYRA'...
+fatal: unable to access 'https://github.com/rustdesk-org/dynamic_layouts.git/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+exit code: 128
