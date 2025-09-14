@@ -1,0 +1,10 @@
+--2025-09-13 21:02:49--  http://198.11.178.210:8000/rustdesk-deps-20250913.tar.gz
+Connecting to 198.11.178.210:8000... failed: Connection timed out.
+Retrying.
+
+--2025-09-13 21:03:22--  (try: 2)  http://198.11.178.210:8000/rustdesk-deps-20250913.tar.gz
+Connecting to 198.11.178.210:8000... failed: Connection timed out.
+Retrying.
+
+--2025-09-13 21:03:56--  (try: 3)  http://198.11.178.210:8000/rustdesk-deps-20250913.tar.gz
+Connecting to 198.11.178.210:8000... 
